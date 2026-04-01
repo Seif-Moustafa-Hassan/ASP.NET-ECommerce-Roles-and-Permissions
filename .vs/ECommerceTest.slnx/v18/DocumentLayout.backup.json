@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "J:\\C#\\ECommerceTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerceTest\\Views\\Product\\Index.cshtml",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "ECommerceTest\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T16:55:07.684Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

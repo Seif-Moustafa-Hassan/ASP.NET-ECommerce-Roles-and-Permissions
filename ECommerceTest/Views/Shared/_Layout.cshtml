@@ -1,0 +1,82 @@
+﻿@using ECommerceTest.Helpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ECommerce</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <!-- BRAND -->
+            @Html.ActionLink("ECommerce", "Index", "Product", null, new { @class = "navbar-brand text-white" })
+
+            <!-- TOGGLER FOR MOBILE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- COLLAPSIBLE LINKS -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <!-- LEFT SIDE LINKS (empty for now) -->
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    @if (Request.IsAuthenticated)
+                    {
+
+                        if (PermissionHelper.HasPermission("Read"))
+                        {
+                            <li class="nav-item">
+                                @Html.ActionLink("Products", "Index", "Product", null, new { @class = "nav-link text-white" })
+                            </li>
+                        }
+
+                        if (PermissionHelper.HasPermission("Create"))
+                        {
+                            <li class="nav-item">
+                                @Html.ActionLink("Create Product", "Create", "Product", null, new { @class = "nav-link text-white" })
+                            </li>
+                        }
+
+                        <li class="nav-item navbar-text text-white">
+                            Hello @User.Identity.Name
+                        </li>
+                        <li class="nav-item">
+                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", style = "display:inline;" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <a href="javascript:document.getElementById('logoutForm').submit()" class="nav-link text-white">Logout</a>
+                            }
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link text-white" })
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content mt-3">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p class="text-white">&copy; @DateTime.Now.Year - ECommerce</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

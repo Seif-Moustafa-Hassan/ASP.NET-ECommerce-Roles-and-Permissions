@@ -1,0 +1,31 @@
+﻿@model ECommerceTest.Models.Product
+
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<h2>Product Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>ID</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Description</dt>
+        <dd>@Model.Description</dd>
+
+        <dt>Price</dt>
+        <dd>@Model.Price</dd>
+
+        <dt>Quantity</dt>
+        <dd>@Model.Quantity</dd>
+
+        <dt>Status</dt>
+        <dd>@(Model.Status ? "Active" : "Inactive")</dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+</p>
