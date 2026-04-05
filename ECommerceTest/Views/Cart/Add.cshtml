@@ -1,0 +1,26 @@
+﻿@model ECommerceTest.Models.Product
+@{
+    ViewBag.Title = "Add to Cart";
+}
+
+<h2>Add to Cart</h2>
+
+<h4>@Model.Name</h4>
+<p>Price: @Model.Price</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Hidden("productId", Model.Id)
+
+    <div class="form-group">
+        <label>Quantity</label>
+        <input type="number" name="quantity" class="form-control" min="1" required />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-success">Add</button>
+    @Html.ActionLink("Cancel", "Index", "Product", null, new { @class = "btn btn-secondary" })
+}

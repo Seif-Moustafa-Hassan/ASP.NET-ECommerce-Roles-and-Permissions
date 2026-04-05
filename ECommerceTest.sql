@@ -104,6 +104,7 @@ SELECT 'ad7b8d12-21a9-4ac4-ad0a-d3fd761eb3da', Id
 FROM Permissions
 WHERE Name = 'Read';
 
+select * from AspNetUsers
 
 select * from AspNetRoles
 
@@ -114,9 +115,13 @@ select * from Permissions
 select * from RolePermissions
 
 
-select * from RolePermissions rp , Permissions p , AspNetRoles r
+select r.Name as role_name , p.Name as permission_name from RolePermissions rp , Permissions p , AspNetRoles r
 where r.Id = rp.RoleId and rp.PermissionId = p.Id
 
+
+
+select users.DisplayName as username , p.Name as productname , c.Quantity from AspNetUsers users , Carts c , Products p
+where users.Id = c.UserId and p.Id = c.ProductId
 
 
 

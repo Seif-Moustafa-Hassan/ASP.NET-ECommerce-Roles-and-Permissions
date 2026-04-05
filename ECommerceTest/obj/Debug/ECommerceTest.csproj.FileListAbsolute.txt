@@ -112,3 +112,4 @@ J:\C#\ECommerceTest\ECommerceTest\obj\Debug\ECommerceTest.Migrations.AddProductA
 J:\C#\ECommerceTest\ECommerceTest\obj\Debug\ECommerceTest.Migrations.SeedProducts.resources
 J:\C#\ECommerceTest\ECommerceTest\obj\Debug\ECommerceTest.Migrations.AddPermissionsTables.resources
 J:\C#\ECommerceTest\ECommerceTest\obj\Debug\ECommerceTest.Migrations.SeedPermissions.resources
+J:\C#\ECommerceTest\ECommerceTest\obj\Debug\ECommerceTest.Migrations.SeedCartPermissions.resources

@@ -169,6 +169,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -196,6 +197,10 @@
     <Compile Include="Migrations\202604011644074_SeedPermissions.cs" />
     <Compile Include="Migrations\202604011644074_SeedPermissions.Designer.cs">
       <DependentUpon>202604011644074_SeedPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202604051841268_SeedCartPermissions.cs" />
+    <Compile Include="Migrations\202604051841268_SeedCartPermissions.Designer.cs">
+      <DependentUpon>202604051841268_SeedCartPermissions.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -284,6 +289,8 @@
     <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Product\Delete.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Cart\Add.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -330,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202604011644074_SeedPermissions.resx">
       <DependentUpon>202604011644074_SeedPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202604051841268_SeedCartPermissions.resx">
+      <DependentUpon>202604051841268_SeedCartPermissions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

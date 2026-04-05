@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "J:\\C#\\ECommerceTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\helpers\\permissionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\helpers\\permissionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\filters\\permissionauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\filters\\permissionauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\helpers\\permissionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\helpers\\permissionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|j:\\c#\\ecommercetest\\ecommercetest\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2A69BC-7855-4FFE-A873-450B0D2C85F4}|ECommerceTest\\ECommerceTest.csproj|solutionrelative:ecommercetest\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,38 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ECommerceTest\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ECommerceTest\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-01T17:25:26.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PermissionHelper.cs",
-              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Helpers\\PermissionHelper.cs",
-              "RelativeDocumentMoniker": "ECommerceTest\\Helpers\\PermissionHelper.cs",
-              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Helpers\\PermissionHelper.cs",
-              "RelativeToolTip": "ECommerceTest\\Helpers\\PermissionHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T17:22:10.995Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -66,22 +52,104 @@
               "RelativeDocumentMoniker": "ECommerceTest\\Filters\\PermissionAuthorizeAttribute.cs",
               "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Filters\\PermissionAuthorizeAttribute.cs",
               "RelativeToolTip": "ECommerceTest\\Filters\\PermissionAuthorizeAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T17:20:07.481Z",
+              "WhenOpened": "2026-04-05T19:58:47.77Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "PermissionHelper.cs",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Helpers\\PermissionHelper.cs",
+              "RelativeDocumentMoniker": "ECommerceTest\\Helpers\\PermissionHelper.cs",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Helpers\\PermissionHelper.cs",
+              "RelativeToolTip": "ECommerceTest\\Helpers\\PermissionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T19:59:20.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ECommerceTest\\Controllers\\ProductController.cs",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ECommerceTest\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T19:54:18.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "ECommerceTest\\Controllers\\CartController.cs",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Controllers\\CartController.cs",
+              "RelativeToolTip": "ECommerceTest\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:57:38.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "ECommerceTest\\App_Start\\RouteConfig.cs",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "ECommerceTest\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T19:54:31.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ECommerceTest\\Models\\Product.cs",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Models\\Product.cs",
+              "RelativeToolTip": "ECommerceTest\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:58:48.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "ECommerceTest\\Views\\Product\\Index.cshtml",
-              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "ECommerceTest\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerceTest\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "ECommerceTest\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-01T16:55:07.684Z",
+              "WhenOpened": "2026-04-05T18:58:26.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "J:\\C#\\ECommerceTest\\ECommerceTest\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "ECommerceTest\\Models\\Cart.cs",
+              "ToolTip": "J:\\C#\\ECommerceTest\\ECommerceTest\\Models\\Cart.cs",
+              "RelativeToolTip": "ECommerceTest\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T19:00:57.189Z",
               "EditorCaption": ""
             }
           ]

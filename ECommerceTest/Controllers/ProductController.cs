@@ -1,5 +1,5 @@
 ﻿using ECommerceTest.Models;
-using ECommerceTest.Filters; // ✅ مهم جداً
+using ECommerceTest.Filters; // Important
 using System;
 using System.Linq;
 using System.Net;
@@ -12,16 +12,16 @@ namespace ECommerceTest.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // ✅ READ (Admin + User)
-        [PermissionAuthorize("Read")]
+        // READ (Admin + User)
+        [PermissionAuthorize("Read", DenyAction = "Forbidden")]
         public ActionResult Index()
         {
             var products = db.Products.ToList();
             return View(products);
         }
 
-        // ✅ READ (Admin + User)
-        [PermissionAuthorize("Read")]
+        // READ (Admin + User)
+        [PermissionAuthorize("Read", DenyAction = "Forbidden")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -34,99 +34,85 @@ namespace ECommerceTest.Controllers
             return View(product);
         }
 
-        // ✅ CREATE (Admin only)
-        [PermissionAuthorize("Create")]
+        // CREATE (Admin only)
+        [PermissionAuthorize("Create", DenyAction = "Forbidden")]
         public ActionResult Create()
         {
             return View();
         }
 
-        // ✅ CREATE (Admin only)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [PermissionAuthorize("Create")]
+        [PermissionAuthorize("Create", DenyAction = "Forbidden")]
         public ActionResult Create([Bind(Include = "Name,Description,Price,Quantity,Status")] Product product)
         {
-            if (ModelState.IsValid)
-            {
-                product.CreatedAt = DateTime.Now;
-                product.UpdatedAt = DateTime.Now;
+            if (!ModelState.IsValid)
+                return View(product);
 
-                db.Products.Add(product);
-                db.SaveChanges();
+            product.CreatedAt = DateTime.Now;
+            product.UpdatedAt = DateTime.Now;
 
-                TempData["SuccessMessage"] = "Product created successfully!";
-                return RedirectToAction("Index");
-            }
+            db.Products.Add(product);
+            db.SaveChanges();
 
-            return View(product);
+            TempData["SuccessMessage"] = "Product created successfully!";
+            return RedirectToAction("Index");
         }
 
-        // ✅ UPDATE (Admin only)
-        [PermissionAuthorize("Update")]
+        // UPDATE (Admin only)
+        [PermissionAuthorize("Update", DenyAction = "Forbidden")]
         public ActionResult Edit(int? id)
         {
-            if (id == null)
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
             var product = db.Products.Find(id);
-            if (product == null)
-                return HttpNotFound();
+            if (product == null) return HttpNotFound();
 
             return View(product);
         }
 
-        // ✅ UPDATE (Admin only)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [PermissionAuthorize("Update")]
+        [PermissionAuthorize("Update", DenyAction = "Forbidden")]
         public ActionResult Edit([Bind(Include = "Id,Name,Description,Price,Quantity,Status")] Product product)
         {
-            if (ModelState.IsValid)
-            {
-                var dbProduct = db.Products.Find(product.Id);
-                if (dbProduct == null)
-                    return HttpNotFound();
+            if (!ModelState.IsValid)
+                return View(product);
 
-                dbProduct.Name = product.Name;
-                dbProduct.Description = product.Description;
-                dbProduct.Price = product.Price;
-                dbProduct.Quantity = product.Quantity;
-                dbProduct.Status = product.Status;
-                dbProduct.UpdatedAt = DateTime.Now;
+            var dbProduct = db.Products.Find(product.Id);
+            if (dbProduct == null) return HttpNotFound();
 
-                db.SaveChanges();
+            dbProduct.Name = product.Name;
+            dbProduct.Description = product.Description;
+            dbProduct.Price = product.Price;
+            dbProduct.Quantity = product.Quantity;
+            dbProduct.Status = product.Status;
+            dbProduct.UpdatedAt = DateTime.Now;
 
-                TempData["SuccessMessage"] = "Product updated successfully!";
-                return RedirectToAction("Index");
-            }
-
-            return View(product);
+            db.SaveChanges();
+            TempData["SuccessMessage"] = "Product updated successfully!";
+            return RedirectToAction("Index");
         }
 
-        // ✅ DELETE (Admin only)
-        [PermissionAuthorize("Delete")]
+        // DELETE (Admin only)
+        [PermissionAuthorize("Delete", DenyAction = "Forbidden")]
         public ActionResult Delete(int? id)
         {
-            if (id == null)
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
             var product = db.Products.Find(id);
-            if (product == null)
-                return HttpNotFound();
+            if (product == null) return HttpNotFound();
 
             return View(product);
         }
 
-        // ✅ DELETE (Admin only)
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [PermissionAuthorize("Delete")]
+        [PermissionAuthorize("Delete", DenyAction = "Forbidden")]
         public ActionResult DeleteConfirmed(int id)
         {
             var product = db.Products.Find(id);
-            if (product == null)
-                return HttpNotFound();
+            if (product == null) return HttpNotFound();
 
             db.Products.Remove(product);
             db.SaveChanges();
@@ -137,8 +123,7 @@ namespace ECommerceTest.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing)
-                db.Dispose();
+            if (disposing) db.Dispose();
             base.Dispose(disposing);
         }
     }

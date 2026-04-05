@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "My Cart";
+}
+
+<h2>My Cart</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.CreatedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

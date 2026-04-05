@@ -38,6 +38,13 @@
                             </li>
                         }
 
+                        if (PermissionHelper.HasPermission("ViewCart"))
+                        {
+                            <li class="nav-item">
+                                @Html.ActionLink("My Cart", "Index", "Cart", null, new { @class = "nav-link text-white" })
+                            </li>
+                        }
+
                         if (PermissionHelper.HasPermission("Create"))
                         {
                             <li class="nav-item">
